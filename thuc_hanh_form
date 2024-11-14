@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phiếu đăng kí tham gia chương trình khuyến mãi</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align:left;
+        }
+        th {
+            background-color: aqua;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="number"], select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Phiếu đăng kí tham gia chương trình khuyến mãi</h2>
+    <form action="/submit_form" method="post">
+        <table>
+            <tr>
+                <th colspan="2">Thông tin khách hàng</th>
+            </tr>
+            <tr>
+                <td>Họ và tên:</td>
+                <td><input type="text" name="fullname" placehoder="Nhập họ tên của bạn" required</td>
+            </tr>
+            <tr>
+                <td>Địa chỉ:</td>
+                <td><input type="text" name="address" placehoder="Nhập địa chỉ của bạn" required</td>
+            </tr>
+            <tr>
+                <td>Số điện thoại:</td>
+                <td><input type="tel" name="phone" placehoder="Nh<ập số điện thoại cảu bạn" required/td>
+            </tr>
+            <tr>
+                <td>Giới tính:</td>
+                <td>
+                    <label><input type="radio" name=""gender" value"Nam" required>Nam</label>
+                    <label><input type="radio" name=""gender" value"Nữ" required>Nữ</label>
+                    <label><input type="radio" name=""gender" value"Khác" required>Khác</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Nghề nghiệp:</td>
+                <td><input type="text" name="occupation" placehoder="Nhập nghề nghiệp của bạn" required</td>
+            </tr>
+            <tr>
+                <td>Sản phẩm tham gia:</td>
+                <td>
+                    <select name=""product" required>
+                        <option value="">--Chọn sản phẩm--</option>
+                        <option value="Bàn chải đánh răng">Bàn chải đánh răng</option>
+                        <option value="Bim Bim">Bim Bim</option>
+                        <option value="KEM">KEM</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Số người dự đoán:</td>
+                <td><input type="number" name="prediction" placehoder="Nhập số người bạn dự đoán" required</td>
+            </tr>
+            <tr>
+                <td colspan="2" style=""text-align: center;">
+                    <button type="submit">Đăng ký</button>
+                </td>"
+            </tr>
+        </table>
+    </form>
+</body>
